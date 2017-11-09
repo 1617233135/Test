@@ -1,0 +1,35 @@
+string="abcdefg  acbdgef  abcdgfe  cadbgfe"
+y='123@qq.comaaa@163.combbb@126.comasdfasfs33333@adf.com'
+
+
+>>> import re
+>>> string="abcdefg  acbdgef  abcdgfe  cadbgfe"
+>>> string
+'abcdefg  acbdgef  abcdgfe  cadbgfe'
+>>> re.findall('\w', string)
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'c', 'b', 'd', 'g', 'e', 'f', 'a', 'b',
+ 'c', 'd', 'g', 'f', 'e', 'c', 'a', 'd', 'b', 'g', 'f', 'e']
+>>> re.findall('\w+', string)
+['abcdefg', 'acbdgef', 'abcdgfe', 'cadbgfe']
+>>>
+>>> y='123@qq.comaaa@163.combbb@126.comasdfasfs33333@adfcom'
+>>> y='123@qq.comaaa@163.combbb@126.comasdfasfs33333@adf.com'
+>>> test_list = ['first', 'seconde']
+>>> test_list
+['first', 'seconde']
+>>> test_list[0]
+'first'
+>>> test_list[1]
+'seconde'
+>>> for item in test_list:
+...     print item
+  File "<stdin>", line 2
+    print item
+             ^
+SyntaxError: Missing parentheses in call to 'print'
+>>> for item in test_list:
+...     print(item)
+...
+first
+seconde
+>>>
